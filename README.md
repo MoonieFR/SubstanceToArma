@@ -8,5 +8,14 @@ You can remove the "no2diff" file if you don't need it. I use this file to inclu
 
 Export preset: Arma 3
 
+How to import :
+1 - Clone this repository and copy the following file: *Arma 3.spexp*
+2 - Go to the Substance Painter shelf located in your Documents.
+    Windows: C:\Users\*username*\Documents\Substance Painter\shelf\export-presets
+    Mac OS: Macintosh > Users > *username* > Documents > Substance Painter > shelf > export-presets
+3 - Paste "*Arma 3.spexp*".
+
 
 <img src="https://cdn.discordapp.com/attachments/547997340288548874/763912413862821898/exemple.jpg">
+
+
