@@ -1,12 +1,13 @@
 ## substance-arma
 
-This preset has been created to export and adapt textures from substance painter to Arma 3 more easily.
+This preset has been created to export and adapt textures from substance painter to Arma 3 more easily. 
 
-It is meant to be used with a MetRough template. 
+It is meant to be used with a MetRough template.
+
+Don't pay attention to the following warning: "'User7' channel is missing in your texture set."
 
 You can remove the "no2diff" file if you don't need it. I use this file to include the normal map info into the albedo, it's usefull in arma since it fakes depth even if there is no indirect light. 
 
-Export preset: Arma 3
 
 How to import :
 1 - Clone this repository and copy the following file: *Arma 3.spexp*
