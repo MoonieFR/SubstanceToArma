@@ -18,6 +18,11 @@ You can also do that directly in Substance Painter but it's more tricky.
 
 ## How to import:
 - Clone this repository and copy all files.
+- Open Substance Painter
+- Go to "File" > "Import ressources" then select all *spexp* files.
+- Choose to import the ressources into your "shelf" then press "Import".
+
+You can also:
 - Go to the Substance Painter shelf located in your Documents.
      Windows: C:\Users\*username*\Documents\Substance Painter\shelf\export-presets.
      Mac OS: Macintosh > Users > *username* > Documents > Substance Painter > shelf > export-presets.
