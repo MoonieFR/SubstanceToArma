@@ -4,16 +4,24 @@ These presets were created to export and adapt textures from Substance Painter t
 
 ## How it works:
 
-The export parameter using the met-rough workflow exports the specular map (SMDI) like this:
-R = User1 (blank)
-G = Diffuse/Base Color
+The export setting using the met-rough workflow exports the specular map (SMDI) as follows:
+R = User1 (white)
+G = Diffuse/base color
 B = Roughness
 
-Note that Arma uses the blue channel information to determine where it needs to shine more or less. Arma 3 doesn't support PBR, we're talking about a non-pbr workflow using specular maps. It's important to note that a specular map and a roughness map are not interpreted in the same way, but specular values can be inverted to transform a roughness map into a specular map.
+Note that the engine uses the blue channel of this map to determine where it should shine more or less, that's why we're including the roughness in the blue channel. Arma 3 doesn't support PBR, so we're talking about a non-PBR workflow using  only specular maps. **Specular maps and roughness maps are not interpreted in the same way**, but values can be inverted to transform a roughness map into a specular map.
 
-If your texture is too bright and looks strange in-game, this may be due to the fact that you didn't convert your roughness to specular before exporting. 
+If your texture is too bright and looks strange in the game, it may be because you didn't invert your roughness before exporting it. 
+It may also be due to high values in your RVMAT. I usually recommend to keep the `specularPower` below `60`. 
+The specular and specular power values are the fields you need to adjust. 
 
-IT'S IMPORTANT TO INVERT ROUGHNESS MAP VALUES BEFORE EXPORTING. 
+## How to invert your roughness in substance :
+
+- Select all your layers, right-click on one of them and select `Group layers`. It will create a new folder with all your layers inside of it. 
+- Right-click on the folder and select `Add levels`
+- Change the `Affected Channel` from `Base Color` to `Roughness`
+
+You can uncheck this option if you wish to continue working on your project, and re-activate it before exporting.
 
 
 ## List of presets 
