@@ -2,6 +2,20 @@
 
 These presets were created to export and adapt textures from Substance Painter to Arma 3.
 
+## How it works:
+
+The export parameter using the met-rough workflow exports the specular map (SMDI) like this:
+R = User1 (blank)
+G = Diffuse/Base Color
+B = Roughness
+
+Note that Arma uses the blue channel information to determine where it needs to shine more or less. Arma 3 doesn't support PBR, we're talking about a non-pbr workflow using specular maps. It's important to note that a specular map and a roughness map are not interpreted in the same way, but specular values can be inverted to transform a roughness map into a specular map.
+
+If your texture is too bright and looks strange in-game, this may be due to the fact that you didn't convert your roughness to specular before exporting. 
+
+IT'S IMPORTANT TO INVERT ROUGHNESS MAP VALUES BEFORE EXPORTING. 
+
+
 ## List of presets 
 
 - Arma 3 Super (MetRough) - Preset to export CO/NOHQ/AS/SMDI maps from a pbr metallic roughness project.
