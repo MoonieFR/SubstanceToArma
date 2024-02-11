@@ -4,12 +4,30 @@ These presets were created to export and adapt textures from Substance Painter t
 
 ## How it works:
 
+
+Arma 3 Super BC (MetRough)
+
 The export setting using the met-rough workflow exports the specular map (SMDI) as follows:
 R = User1 (white)
 G = Diffuse/base color
 B = Roughness
 
-Note that the engine uses the blue channel of this map to determine where it should shine more or less, that's why we're including the roughness in the blue channel. Arma 3 doesn't support PBR, so we're talking about a non-PBR workflow using  only specular maps. **Specular maps and roughness maps are not interpreted in the same way**, but values can be inverted to transform a roughness map into a specular map.
+Adapted to a workflow that revolves around Base Color. Not recommended for beginners. 
+
+
+
+Arma 3 Super M (MetRough)
+
+The export setting using the met-rough workflow exports the specular map (SMDI) as follows:
+R = User1 (white)
+G = Metallic
+B = Roughness
+
+Fast, easy but you will lose details.
+
+
+
+Note that the engine uses the blue channel of this map to determine where it should shine more or less, that's why we're including the roughness in the blue channel. Arma 3 doesn't support PBR, so we're talking about a non-PBR workflow using  only specular maps. **Glossiness maps and roughness maps are not interpreted in the same way**, but values can be inverted to transform a roughness map into a glossiness.
 
 If your texture is too bright and looks strange in the game, it may be because you didn't invert your roughness before exporting it. 
 It may also be due to high values in your RVMAT. I usually recommend to keep the `specularPower` below `60`. 
@@ -26,7 +44,8 @@ You can uncheck this option if you wish to continue working on your project, and
 
 ## List of presets 
 
-- Arma 3 Super (MetRough) - Preset to export CO/NOHQ/AS/SMDI maps from a pbr metallic roughness project.
+- Arma 3 Super M (MetRough) - Preset to export CO/NOHQ/AS/SMDI maps from a pbr metallic roughness project (M for Metallic)
+- Arma 3 Super BC (MetRough) - Preset to export CO/NOHQ/AS/SMDI maps from a pbr metallic roughness project (BC for Base Color).
 - Arma 3 Super (SpecGloss) - Preset to export CO/NOHQ/AS/SMDI maps from a non-pbr specular glossiness project.
 - Arma 3 SuperAlpha (MetRough) - Preset to export CA/NOHQ/AS/SMDI maps including alpha information from a pbr metallic roughness project.
 - Arma 3 SuperAlpha (SpecGloss) - Preset to export CA/NOHQ/AS/SMDI maps including Alpha information from a non-pbr specular glossiness project.
