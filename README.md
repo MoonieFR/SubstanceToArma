@@ -6,22 +6,22 @@ These presets were created to export and adapt textures from Substance Painter t
 
 
 Arma 3 Super BC (MetRough)
-
+‎ 
 The export setting using the met-rough workflow exports the specular map (SMDI) as follows:
-R = User1 (white)
-G = Diffuse/base color
-B = Roughness
-
+🟥 Red = User1 (white)
+🟩 Green = Diffuse/base color
+🟦 Blue = Roughness
+‎ 
 Adapted to a workflow that revolves around Base Color. Not recommended for beginners. 
-
+‎ 
 
 
 Arma 3 Super M (MetRough)
 
 The export setting using the met-rough workflow exports the specular map (SMDI) as follows:
-R = User1 (white)
-G = Metallic
-B = Roughness
+🟥 Red = User1 (white)
+🟩 Green = Diffuse/base color
+🟦 Blue = Roughness
 
 Fast, easy but you will lose details.
 
