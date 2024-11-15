@@ -1,82 +1,103 @@
-## SubstanceToArma
+# 🎨 Arma 3 Substance Painter Export Presets
 
-These presets were created to export and adapt textures from Substance Painter to Arma 3.
+Welcome to this collection of **Substance Painter presets** crafted to adapt your textures for **Arma 3**! These presets streamline the workflow by exporting maps tailored to Arma 3’s unique texture requirements, making it easy to achieve a polished, in-game look.
 
-## How it works:
+---
+
+## ✨ Preset Overview
 
 ### Arma 3 Super BC (MetRough)
 
-‎
-> The export setting using the met-rough workflow exports the specular map (SMDI) as follows:
-> - 🟥 Red = User1 (white)
-> - 🟩 Green = Diffuse/base color
-> - 🟦 Blue = Roughness
-‎ 
-Adapted to a workflow that revolves around Base Color. Not recommended for beginners. 
-‎
+This export uses the **metallic-roughness workflow**, configuring the SMDI (**specular map**) with the following channel setup:
 
+- 🟥 **Red**: `User1` (White)
+- 🟩 **Green**: Diffuse/Base Color
+- 🟦 **Blue**: Roughness
 
-###  Arma 3 Super M (MetRough)
+> **For Advanced Users**: This preset emphasizes the **Base Color** channel and is not recommended for beginners.
 
-> The export setting using the met-rough workflow exports the specular map (SMDI) as follows:
-> - 🟥 Red = User1 (white)
-> - 🟩 Green = Diffuse/base color
-> - 🟦 Blue = Roughness
+---
 
-Fast, easy but you will lose details.
+### Arma 3 Super M (MetRough)
 
-___
+A simplified metallic-roughness workflow that also configures the **SMDI map**, offering a quicker setup for fast exports:
 
-Note that the engine uses the blue channel of this map to determine where it should shine more or less, that's why we're including the roughness in the blue channel. Arma 3 doesn't support PBR, so we're talking about a non-PBR workflow using  only specular maps. **Glossiness maps and roughness maps are not interpreted in the same way**, but values can be inverted to transform a roughness map into a glossiness.
+- 🟥 **Red**: `User1` (White)
+- 🟩 **Green**: Diffuse/Base Color
+- 🟦 **Blue**: Roughness
 
-If your texture is too bright and looks strange in the game, it may be because you didn't invert your roughness before exporting it. 
-It may also be due to high values in your RVMAT. I usually recommend to keep the `specularPower` below `60`. 
-The specular and specular power values are the fields you need to adjust. 
- ___
-## How to invert your roughness in substance :
+> **Note:** The blue channel controls shine intensity in Arma 3, making roughness essential. Since Arma 3 doesn’t support PBR directly, these workflows use **non-PBR specular maps**.
 
-- Select all your layers, right-click on one of them and select `Group layers`. It will create a new folder with all your layers inside of it. 
-- Right-click on the folder and select `Add levels`
-- Change the `Affected Channel` from `Base Color` to `Roughness`
+---
 
-You can uncheck this option if you wish to continue working on your project, and re-activate it before exporting.
+### Arma 3 Super (SpecGloss)
 
+This preset supports the **specular-glossiness workflow**, optimized for **non-PBR projects** in Arma 3.
 
-## List of presets 
+---
 
-#### Arma 3 Super M (MetRough)
-  > Preset to export CO/NOHQ/AS/SMDI maps from a pbr metallic roughness project (M for Metallic).
-#### Arma 3 Super BC (MetRough)
-  > Preset to export CO/NOHQ/AS/SMDI maps from a pbr metallic roughness project (BC for Base Color).
-#### Arma 3 Super (SpecGloss)
-  > Preset to export CO/NOHQ/AS/SMDI maps from a non-pbr specular glossiness project.
-#### Arma 3 SuperAlpha (MetRough)
-  > Preset to export CA/NOHQ/AS/SMDI maps including alpha information from a pbr metallic roughness project.
-#### Arma 3 SuperAlpha (SpecGloss)
-  > Preset to export CA/NOHQ/AS/SMDI maps including Alpha information from a non-pbr specular glossiness project.
-#### Arma 3 SuperNo2Diff (MetRough)
-  > Preset to export CO/NOHQ/AS/SMDI (+ Grey OpenGL normal) maps from a pbr metallic roughness project.
+### Arma 3 SuperAlpha (MetRough)
 
+Exports maps from a **metallic-roughness project**, with added support for **alpha information**.
 
-*Don't pay attention to the following warning: "'User1' channel is missing in your texture set."*
+---
 
-## About SuperNo2Diff 
-I use this preset when I want to include my normal info into the diffuse/albedo/colormap. Including this information is convenient because it allows you to give an illusion of depth even without indirect light.
-You can also do that directly in Substance Painter but it's more tricky.
+### Arma 3 SuperAlpha (SpecGloss)
 
-## How to import:
-- Clone this repository and copy all files.
-- Open Substance Painter
-- Go to "File" > "Import ressources" then select all *spexp* files.
-- Choose to import the ressources into your "shelf" then press "Import".
+Exports maps with **alpha support** from a **specular-glossiness project**.
 
-You can also:
-- Go to the Substance Painter shelf located in your Documents.
-     Windows: C:\Users\*username*\Documents\Substance Painter\shelf\export-presets.
-     Mac OS: Macintosh > Users > *username* > Documents > Substance Painter > shelf > export-presets.
-- Paste all *spexp* files.
+---
 
+### Arma 3 SuperNo2Diff (MetRough)
 
-<img src="https://cdn.discordapp.com/attachments/547997340288548874/763912413862821898/exemple.jpg">
+This preset exports CO/NOHQ/AS/SMDI maps plus **Grey OpenGL normal maps** from a **metallic-roughness project**. It includes normal details directly in the diffuse/albedo map, creating depth in-game without indirect lighting.
 
+> **Tip:** Ignore the warning "`User1` channel is missing in your texture set" for this preset.
 
+---
+
+## Workflow Tips
+
+### Invert Roughness for Accurate Exports
+
+If your texture appears too bright in-game, **invert the roughness** before exporting from Substance Painter:
+
+1. Select all layers.
+2. Right-click on one and choose **Group Layers**.
+3. Right-click the group, select **Add Levels**, and set the **Affected Channel** to **Roughness**.
+
+---
+
+### Specular Power Recommendations
+
+For best results, keep `specularPower` below 60. Adjust **specular** and **specularPower** values as needed for optimal shine and reflection.
+
+---
+
+## How to Import
+
+### Method 1: Importing via Substance Painter
+
+1. Clone this repository and copy all files.
+2. Open **Substance Painter**.
+3. Go to **File > Import Resources** and select all `.spexp` files.
+4. Choose **Shelf** as the destination and click **Import**.
+
+---
+
+### Method 2: Manually Adding Files
+
+1. Locate the Substance Painter shelf directory:
+   - **Windows**: `C:\Users\[username]\Documents\Substance Painter\shelf\export-presets`
+   - **Mac OS**: `Macintosh HD > Users > [username] > Documents > Substance Painter > shelf > export-presets`
+2. Paste all `.spexp` files into this folder.
+
+---
+
+## Contributing
+
+Your contributions are welcome! If you have improvements or additional workflows for Arma 3, feel free to contact me on discord: mooniefr
+
+---
+
+Enjoy using these custom export presets!
