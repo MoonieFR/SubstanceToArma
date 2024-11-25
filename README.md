@@ -1,6 +1,6 @@
-# 🎨 Arma 3 Substance Painter Export Presets
+# 🎨 Arma 3/DayZ Substance Painter Export Presets
 
-Welcome to this collection of **Substance Painter presets** crafted to adapt your textures for **Arma 3**! These presets streamline the workflow by exporting maps tailored to Arma 3’s unique texture requirements, making it easy to achieve a polished, in-game look.
+Welcome to this collection of **Substance Painter presets** crafted to adapt your textures for **Arma 3** and **DayZ**! These presets streamline the workflow by exporting maps tailored to Arma 3/DayZ.
 
 ---
 
