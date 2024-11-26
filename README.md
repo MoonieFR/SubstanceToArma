@@ -30,6 +30,8 @@ It will export the following maps:
 
 In the "OTHERS" folder, you will find other export-presets including one preset for people working with SpecGloss instead of MetRough. 
 
+---
+
 #### Arma 3 Super (SpecGloss)
 
 This preset supports the **specular-glossiness workflow**, optimized for **non-PBR projects** in Arma 3. Ideal for older workflows or specific texturing requirements.
