@@ -2,6 +2,13 @@
 
 Welcome to this collection of **Substance Painter presets** crafted to adapt your textures for **Arma 3** and **DayZ**! 
 
+- If you want to know more about Arma 3/DayZ Texturing, you can [check this short wiki page](https://github.com/MoonieFR/SubstanceToArma/wiki) 
+
+- Do you plan to make a building? You might want to learn about Multimat and check **HorribleGoat**'s MultiMat exemple on the official Discord. You can get it [here](https://discord.com/channels/105462288051380224/105781923573456896/1126619492139675768).
+
+- Need your questions answered? Ask them on the [Official Discord Server](https://discord.com/channels/105462288051380224/105781923573456896)
+. Don't hesitate to ping me if needed. 
+
 ---
 
 ## ✨ Preset Overview
