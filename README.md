@@ -60,11 +60,29 @@ This preset exports CO/NOHQ/AS/SMDI maps plus **Grey OpenGL normal maps** from a
 
 ### Invert Roughness for Accurate Exports
 
-If your texture appears too bright in-game, **invert the roughness** before exporting from Substance Painter:
+If your texture appears too bright in-game, **invert the roughness** before exporting from Substance Painter. 
 
-1. Select all layers.
-2. Right-click on one and choose **Group Layers**.
-3. Right-click the group, select **Add Levels**, and set the **Affected Channel** to **Roughness**.
+You can use the provided SmartMaterial named **`Arma 3 - MetRough.spsm`**, located in the **SmartMaterial** folder, to help you with this process.
+
+#### Steps:
+
+1. Drag and drop the **`Arma 3 - MetRough` Smart Material** into your **Layers Window**.
+2. Move all your layers into the **`Arma 3 - MetRough` folder** created by the Smart Material.
+
+This will apply the necessary adjustments automatically.
+
+---
+
+### Add Depth with the AO Layer
+
+Inside the Smart Material, you will also find a layer named **`AO`**. This layer is designed to add **fake shadows** based on your Ambient Occlusion (AO) map. Properly adjusted, it brings depth and life to your textures.
+
+#### How to Use the AO Layer:
+
+1. Ensure the **`AO` layer** is located **above all other layers** in the Smart Material.
+2. Experiment with opacity and blending modes to achieve the desired effect.
+
+> **Tip:** Try it out for yourself—this simple addition can make a significant difference to the final look of your textures!
 
 ---
 
@@ -91,6 +109,7 @@ For best results, keep `specularPower` below 60. Adjust **specular** and **specu
    - **Windows**: `C:\Users\[username]\Documents\Substance Painter\shelf\export-presets`
    - **Mac OS**: `Macintosh HD > Users > [username] > Documents > Substance Painter > shelf > export-presets`
 2. Paste all `.spexp` files into this folder.
+
 
 ---
 
