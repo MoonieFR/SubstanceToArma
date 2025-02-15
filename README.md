@@ -9,6 +9,9 @@ Welcome to this collection of **Substance Painter presets** crafted to adapt you
 - Need your questions answered? Ask them on the [Official Discord Server](https://discord.com/channels/105462288051380224/105781923573456896)
 . Don't hesitate to ping me if needed. 
 
+
+IMPORTANT: If you get the error “Don't know how to read this version”, your software is out of date. If you are using Substance Painter 10.0.0 or 10.0.1, you can use the export-preset in the “substance painter 10.0” file. If you have an older version of Substance Painter, please contact me on Discord: mooniefr and I'll export the presets for your version :) 
+
 ---
 
 ## ✨ Preset Overview
